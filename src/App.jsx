@@ -4,7 +4,7 @@ import './App.css'
 import { AiTwotoneMail, AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { BsChevronRight } from 'react-icons/bs';
 import { RxReset } from 'react-icons/rx';
-import avatar from './assets/avatar.jpg';
+import avatar from './assets/avatar2.jpeg';
 import QRCode from "react-qr-code";
 
 function App() {
