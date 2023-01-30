@@ -110,8 +110,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="sm:h-auto
-      md:h-auto
+      <div className="h-auto
       lg:h-screen
       transition-all
       duration-300
@@ -123,16 +122,17 @@ function App() {
       flex-col
       items-start
       justify-evenly
+      py-20
+      lg:py-0
       ">
-        <h1 className='p-20 font-semibold text-2xl text-gray-300 mb-4'>Projects</h1>
-        <div className='w-full relative h-80 sm:mb-20 md:mb-20'>
+        <h1 className='px-20 font-semibold text-2xl text-gray-300 mb-4'>Projects</h1>
+        <div className='hidden lg:block w-full relative h-80 sm:mb-20 md:mb-20'>
           <div className='lg:absolute w-full lg:-left-20 h-80 bg-neutral-300 drop-shadow-lg flex items-center justify-between overflow-hidden'>
-            <pre className='text-8xl w-1/2 opacity-10 break-words'>
+            <pre className='text-8xl opacity-10 break-words'>
               {projects[selectedProject].title}
             </pre>
             <QRCode
-              size={256}
-              className="mix-blend-difference opacity-10 w-1/2"
+              className="mix-blend-difference opacity-10"
               style={{ height: "100%" }}
               value={projects[selectedProject].link}
               viewBox={`0 0 256 256`}
